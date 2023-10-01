@@ -1,0 +1,45 @@
+{{! This will be inserted into main.handlebars by using a get request from  our routes }}
+
+<div class="min-h-screen flex items-center justify-center loginbackground">
+  <div class="bg-white p-8 rounded shadow-md w-96">
+    <h2 class="text-2xl font-semibold mb-6">Login</h2>
+    <form class="login-form">
+      <div class="mb-4">
+        <label
+          for="email"
+          class="block text-gray-600 text-sm font-medium"
+        >Email</label>
+        <input
+          type="text"
+          placeholder="Alissa@mail.com"
+          id="email-login"
+          name="email"
+          class="border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-4">
+        <label
+          for="password"
+          class="block text-gray-600 text-sm font-medium"
+        >Password</label>
+        <input
+          type="password"
+          id="password-login"
+          name="password"
+          class="border rounded w-full py-2 px-3 text-gray-700 focus:outline-none focus:border-blue-500"
+        />
+      </div>
+      <div class="mb-6">
+        <button
+          type="submit"
+          class="bg-blue-500 text-white w-full py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+        >Login</button>
+      </div>
+    </form>
+    <p class="text-gray-600 text-sm text-center">Don't have an account?
+      <a href="/signup" class="text-blue-500">Sign up</a>
+    </p>
+  </div>
+</div>
+
+<script src="./js/login.js"></script>
